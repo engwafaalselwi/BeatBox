@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/recycler_view"
+          android:layout_width="match_parent"
+          android:layout_height="2dp"
+          android:layout_weight="1"/>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:layout_marginBottom="20dp"
+          android:text="Playback Speed 0 % "
+          android:layout_marginLeft="5dp"
+          style="@style/Widget.AppCompat.SeekBar"
+          android:max="100"
+
+          android:textStyle="bold">
+
+
+      </TextView>
+
+      <SeekBar
+          android:id="@+id/seekBar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom"
+          android:layout_marginBottom="50dp"
+          />
+
+
+
+  </LinearLayout>
+
+</layout>
